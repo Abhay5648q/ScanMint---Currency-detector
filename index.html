@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Currency Authenticity Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 🔹 Navbar -->
+  <nav class="navbar">
+    <div class="logo">💰 ScanMint - Currency Detector </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#security">Security Tips</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔹 Main Container -->
+  <div class="container" id="home">
+    <header>
+      <h1>🤖 AI Currency Authenticity Detector</h1>
+      <p>Upload an image of Indian currency to verify its authenticity using AI</p>
+    </header>
+
+    <main>
+      <div class="upload-box">
+        <input type="file" id="currencyInput" accept="image/*">
+        <button id="analyzeBtn">Analyze Currency</button>
+      </div>
+
+      <div id="result" class="result-box hidden">
+        <h2 id="status"></h2>
+        <p id="confidence"></p>
+      </div>
+    </main>
+  </div>
+
+  <!-- 🔹 Security Tips Section -->
+  <section id="security" class="info-section">
+    <h2>🔐 Security Tips for Handling Currency</h2>
+    <ul>
+      <li>Always check for the security thread and watermark on Indian notes.</li>
+      <li>Feel the texture — genuine notes have raised prints and special paper.</li>
+      <li>Use UV light or apps like this one to detect counterfeit currency.</li>
+      <li>Never accept damaged or suspicious notes in high-value transactions.</li>
+    </ul>
+  </section>
+
+<!-- 🔹 Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>📞 Contact Us</h2>
+  <p>We’d love to hear from you! Whether you found fake currency or have feedback about this AI project, reach out below.</p>
+
+  <form id="contactForm">
+    <div class="form-group">
+      <input type="text" id="name" required>
+      <label for="name">Your Name</label>
+    </div>
+
+    <div class="form-group">
+      <input type="email" id="email" required>
+      <label for="email">Your Email</label>
+    </div>
+
+    <div class="form-group">
+      <textarea id="message" rows="4" required></textarea>
+      <label for="message">Your Message</label>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+
+  <div id="formResponse" class="hidden">✅ Message sent successfully! We’ll get back soon.</div>
+</section>
+
+
+  <footer>
+    <p>© 2025 AI Currency Secure Labs | Protecting Digital Economy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
